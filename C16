@@ -1,0 +1,14 @@
+public class C16 {
+
+    static double saldo(int ano){
+        if(ano==1) return 550;
+        
+        return saldo(ano-1)+saldo(ano-1)/10;
+    }
+    public static void main(String[] args) {
+        double n=saldo(3);
+        System.out.println(n);
+        
+    }
+    
+}
