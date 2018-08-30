@@ -1,0 +1,13 @@
+public class C17 {
+    
+    static int A(int n){
+        if(n==1) return 50000 *3;
+        return 3* A(n-1);
+    }
+    public static void main(String[] args) {
+        
+        int n= A(3);
+        System.out.println(n);
+    }
+    
+}
